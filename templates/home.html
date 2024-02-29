@@ -2,7 +2,39 @@
 <!-- This is a Jinja based template. To read more about Jinja, check
  https://jinja.palletsprojects.com/en/3.0.x/  -->
 <title>Message board</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Cairo');
+
+.title {
+  font-family: "Cairo";
+  text-align: center;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  line-height:2
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 120px;
+  margin: 10px 0;
+}
+</style>
 <body>
+
+   <div class="title">
+ <h1>Hanneng Hu</h1>
+
+ </div>
     <h4>There are {{ messages|length }} messages on the board.</h4>
 
     <h4> Here are the last 10:</h4>
