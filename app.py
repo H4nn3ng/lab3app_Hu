@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 
 def read_messages_from_file():
-    """ Read all messages from a JSON file,test2"""
-    with open('/mnt/data.json') as messages_file:
+    """ Read all messages from a JSON file,reverse test"""
+    with open('/data.json') as messages_file:
         return json.load(messages_file)
 
 
